@@ -18,7 +18,9 @@ const Clock = () => {
 
   return (
     <div className={styles.container}>
-      <ClockDisplay value={<i className='bi bi-clock'></i>} />
+      <ClockDisplay
+        value={<i className='bi bi-clock' style={{ fontSize: '6rem' }}></i>}
+      />
 
       {digits.map((value, index) => (
         <ClockDisplay value={value} key={index} />
